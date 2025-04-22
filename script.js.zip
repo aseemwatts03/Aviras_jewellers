@@ -1,0 +1,21 @@
+// script.js
+function scrollToSection(id) {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+function submitForm(event) {
+  event.preventDefault();
+  alert("Thank you for your message! We'll get back to you soon.");
+}
+
+// Set current year in footer
+document.addEventListener("DOMContentLoaded", () => {
+  const yearSpan = document.getElementById("year");
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+});
+ß
